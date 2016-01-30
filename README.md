@@ -80,3 +80,26 @@ Quelques exemples vous montrant la souplesse de ces fonctions :
 * parseInt("J'ai 12 Euros") vaudra Nan (la chaîne commence par une lettre)
 * parseFloat(" 12.9 Frs ") vaudra 12.9
 * parseFloat("3,14") vaudra... 3 : il faut utiliser le point et non la virgule. La conversion va donc s'arrêter après le "3".
+
+Priorités de calcul
+-
+1. de gauche à droite
+2. multiplications (*), division (/) et modulo (%)
+3. addition (+) et soustraction (-).
+
+Autres opérateurs
+-
+resultat += X;   
+resultat = resultat + X;
+***
+Ces deux lignes sont strictement équivalentes, idem pour :
+***
+resultat -= X;   
+resultat = resultat - X;
+
+resultat *= X;   
+resultat = resultat * X;
+
+resultat %= X;   
+resultat = resultat % X;
+
