@@ -65,9 +65,9 @@ Vocabulaire JS
 =
 Mots du langage, et API, à savoir objets et fonctions déjà présents, par exemple :
 
-*parseInt
-*isNaN
-*true
-*window dans un navigateur
-*console
-*JSON.parse()
+* parseInt
+* isNaN
+* true
+* window dans un navigateur
+* console
+* JSON.parse()
