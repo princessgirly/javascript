@@ -6,6 +6,7 @@ Grammaire
 Des éléments de la grammaire française traduits en JS :
 
 ponctuation , ; ( ) { }
+
 logique et conjonctions de subordination ~ contrôle if else switch while for
 
 nom : données/valeurs 1 "un" [1] { prop: 1} function() {}
@@ -14,7 +15,7 @@ pronom (prend la place d'un nom) var
 
 il y a des mots "invariables" true false
 
-verbes : opérateurs, fonctions et méthodes
+verbes : opérateurs, fonctions et méthodes  
 
 Champ lexical
 =
