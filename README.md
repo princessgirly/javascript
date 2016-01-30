@@ -65,9 +65,18 @@ Vocabulaire JS
 =
 Mots du langage, et API, à savoir objets et fonctions déjà présents, par exemple :
 
-* parseInt
-* isNaN
+* parseInt : convertir en un nombre entier
+* parseFloat : convertir en un nombre décimal
+* isNaN : Not a number ce n'est pas un nombre
 * true
 * window dans un navigateur
 * console
 * JSON.parse()
+
+Quelques exemples vous montrant la souplesse de ces fonctions :
+
+* parseInt("12.9 Euros") vaudra 12 (on convertit en entiers, les chiffres après la virgule sont ignorés)
+* parseInt(" 12 Frs ") vaudra également 12 (l'espace en début de chaîne est ignoré)
+* parseInt("J'ai 12 Euros") vaudra Nan (la chaîne commence par une lettre)
+* parseFloat(" 12.9 Frs ") vaudra 12.9
+* parseFloat("3,14") vaudra... 3 : il faut utiliser le point et non la virgule. La conversion va donc s'arrêter après le "3".
