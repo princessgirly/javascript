@@ -1,19 +1,23 @@
-# javascript
-Cours sur javascript 
+# JAVASCRIPT
+Cours sur javascript
 
 Grammaire
-
+=
 Des éléments de la grammaire française traduits en JS :
 
 ponctuation , ; ( ) { }
 logique et conjonctions de subordination ~ contrôle if else switch while for
+
 nom : données/valeurs 1 "un" [1] { prop: 1} function() {}
+
 pronom (prend la place d'un nom) var
+
 il y a des mots "invariables" true false
+
 verbes : opérateurs, fonctions et méthodes
 
 Champ lexical
-
+=
 Si on admet l'analogie "nom en français" <=> "données en JS", on peut comparer le champ lexical au type de données :
 
 données de type primitif :
@@ -31,7 +35,7 @@ les fonctions (et oui un verbe peut servir de nom "tricher n'est pas jouer")
 TODO portée des variables
 
 Les verbes en actions
-
+=
 // operator
 var result = x + y;
 // invocation de fonction
@@ -41,7 +45,7 @@ result = x.add(y);
 Quelques opérateurs . typeof = + - ! * / % > < <= >= !== === && || ? : ++ -- new += return ? :
 
 Orthographe JS
-
+=
 un nom de variable est une lettre optionnellement suivie par une ou plusieurs lettres, chiffres et _
 il existe des mots réservés par le langage, et donc interdits dans le noms de variables if function else var...
 les valeurs littérales :
@@ -53,11 +57,11 @@ une fonction function myFunction(arguments) { "body"; }
 une expression régulière /ab+c/
 
 Conjugaison JS
-
+=
 Les différentes manières d'enclencher les actions/verbes (invocation, apply, call)
 
 Vocabulaire JS
-
+=
 Mots du langage, et API, à savoir objets et fonctions déjà présents, par exemple :
 
 parseInt
