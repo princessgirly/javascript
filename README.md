@@ -90,16 +90,45 @@ Priorités de calcul
 Autres opérateurs
 -
 resultat += X;   
+
 resultat = resultat + X;
 ***
 Ces deux lignes sont strictement équivalentes, idem pour :
 ***
 resultat -= X;   
+
 resultat = resultat - X;
 
 resultat *= X;   
+
 resultat = resultat * X;
 
 resultat %= X;   
+
 resultat = resultat % X;
 
+variable += X;
+
+variable = variable + X;
+
+variable -= X;
+
+variable = variable - X;
+
+Incrémentation / décrémentation
+-
+Pour augmenter de 1 la valeur d'une variable (= incrémenter)**variable++**
+
+Pour diminuer de 1 la valeur d'une variable (= décrémenter)**variable--**
+
+variable++;
+
+variable += 1;
+
+variable = variable + 1;
+
+variable--;
+
+variable -= 1;
+
+variable = variable - 1;
