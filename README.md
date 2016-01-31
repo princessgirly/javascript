@@ -5,57 +5,63 @@ Grammaire
 =
 Des éléments de la grammaire française traduits en JS :
 
-ponctuation , ; ( ) { }
++ ponctuation <pre><code>, ; ( ) { }</pre></code>
 
-logique et conjonctions de subordination ~ contrôle if else switch while for
++ logique et conjonctions de subordination ~ contrôle <pre><code>if else switch while for</pre></code>
 
-nom : données/valeurs 1 "un" [1] { prop: 1} function() {}
++ nom : données/valeurs <pre><code>1 "un" [1] { prop: 1} function() {}</pre></code>
 
-pronom (prend la place d'un nom) var
++ pronom (prend la place d'un nom) <pre><code>var</pre></code>
 
-il y a des mots "invariables" true false
++ il y a des mots "invariables" <pre><code>true false</pre></code>
 
-verbes : opérateurs, fonctions et méthodes  
++ verbes : opérateurs, fonctions et méthodes  
 
 Champ lexical
 =
 Si on admet l'analogie "nom en français" <=> "données en JS", on peut comparer le champ lexical au type de données :
 
 données de type primitif :
-booléens true false (espace de valeurs invariable)
-nombres 1 1.1 1e4
-chaînes de caractères "aujourd'hui" ou 'aujourd\'hui'
-symbols
-valeur nulle null
-valeur non définie undefined
-les objets
-objet générique { propriété: "valeur", autre: 2 }
-tableaux [1, 2, 3]
-plus tous les types qu'on veut créer, ceux d'ES6 (Map, Set)...
-les fonctions (et oui un verbe peut servir de nom "tricher n'est pas jouer")
-TODO portée des variables
++ booléens <code>true false</code> (espace de valeurs invariable)
++ nombres 1 1.1 1e4
++ chaînes de caractères <code>"aujourd'hui" ou 'aujourd\'hui'</code>
++ symbols
++ valeur <code>nulle null</code>
++ valeur <code>non définie undefined</code>
++ les objets
++ objet générique <code>{ propriété: "valeur", autre: 2 }</code>
++ tableaux [1, 2, 3]
++ plus tous les types qu'on veut créer, ceux d'ES6 (Map, Set)...
++ les fonctions (et oui un verbe peut servir de nom "tricher n'est pas jouer")
++ TODO portée des variables
 
 Les verbes en actions
 =
 // operator
+
 var result = x + y;
+
 // invocation de fonction
+
 result = add(x, y);
+
 // invocation de méthode
+
 result = x.add(y);
+
 Quelques opérateurs . typeof = + - ! * / % > < <= >= !== === && || ? : ++ -- new += return ? :
 
 Orthographe JS
 =
-un nom de variable est une lettre optionnellement suivie par une ou plusieurs lettres, chiffres et _
-il existe des mots réservés par le langage, et donc interdits dans le noms de variables if function else var...
-les valeurs littérales :
-pour un nombre 10 2.5 3.1e2
-une chaîne de caractère
-un tableau (array) [1, 2, 3]
-un objet
-une fonction function myFunction(arguments) { "body"; }
-une expression régulière /ab+c/
++ un nom de variable est une lettre optionnellement suivie par une ou plusieurs lettres, chiffres et _
++ il existe des mots réservés par le langage, et donc interdits dans le noms de variables <code>if function else var...</code>
++ les valeurs littérales :
+ - pour un nombre <code>10 2.5 3.1e2</code>
+ - une chaîne de caractère
+- un tableau <code>(array) [1, 2, 3]</code>
+ - un objet
+ - une fonction <code>function myFunction(arguments) { "body"; }</code>
+ - une expression régulière <code>/ab+c/</code>
 
 Conjugaison JS
 =
@@ -65,6 +71,7 @@ Vocabulaire JS
 =
 Mots du langage, et API, à savoir objets et fonctions déjà présents, par exemple :
 
+* Indentation : décaler certaines parties du code de manière à le rendre plus lisible.
 * parseInt : convertir en un nombre entier
 * parseFloat : convertir en un nombre décimal
 * isNaN : Not a number ce n'est pas un nombre
@@ -111,15 +118,29 @@ variable = variable - X;
 
 Incrémentation / décrémentation
 -
-Pour augmenter de 1 la valeur d'une variable (= incrémenter)**variable++**
+Pour augmenter de 1 la valeur d'une variable (= incrémenter) **variable++**
 
-Pour diminuer de 1 la valeur d'une variable (= décrémenter)**variable--**
+Pour diminuer de 1 la valeur d'une variable (= décrémenter) **variable--**
 
-variable++;
-variable += 1;
+variable++; 
+variable += 1; 
 variable = variable + 1;
 
 
-variable--;
-variable -= 1;
+variable--; 
+variable -= 1; 
 variable = variable - 1;
+
+Exemples de fonction :
+-
+triple(x) qui renvoie le triple de l'argument : **function triple(x) { return 3*x; }**
+
+carre(x) qui renvoie le carré de l'argument (x²) :  **function carre(x) { return x*x; }**
+
+cube(x) qui renvoie le cube de l'argument: **function cube(x) { return x*x*x; }**
+
+
+
+
+
+
