@@ -139,6 +139,10 @@ carre(x) qui renvoie le carré de l'argument (x²) :  **function carre(x) { retu
 
 cube(x) qui renvoie le cube de l'argument: **function cube(x) { return x*x*x; }**
 
++ Math.floor()
++ Math.random()
++ Math.round() 
++ function nb_aleatoire()
 
 
 
